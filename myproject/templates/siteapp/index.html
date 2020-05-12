@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'siteapp/base.html'%}
+    {% block body_block %}
+    <div class="jumbotron">
+        <h1>Welcome to index Page</h1>
+        <a href="{% url 'siteapp:relative'%}">Relative Page</a>
+        
+        <h1>{{ name|cut:'this' }}</h1>
+        <h3>{{ des|title }}</h3>
+    </div>
+    {% endblock %}
